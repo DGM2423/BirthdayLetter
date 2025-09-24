@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Images/BirthdayBackground.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 450px;
+    height: 360px;
+    background: #ae7373 ;
+    color: #e1c693;
+    border-radius: 40px;
+    border: 5px solid #e1c693;
+    padding: 30px 40px;
+
+}
+
+.wrapper h1{
+    font-size: 46px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #e4d3ff;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #8dd0b3;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #8dd0b3;
+    font-size: 16px;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #e4d3ff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ae7373;
+    font-weight: 600;
+}
+
+#error {
+    color: red;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}

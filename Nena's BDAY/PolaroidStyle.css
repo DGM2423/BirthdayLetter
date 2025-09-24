@@ -1,0 +1,67 @@
+body {
+  background-color: pink;
+  background-image: url('Images/House2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  padding: 20x;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  color: pink;
+  margin: 0 0 10px 0; /* normal spacing below h1 */
+}
+
+#my-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: pink;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Stack container */
+.stack {
+  position: relative;
+  width: 300px;     /* width of stack */
+  height: 320px;    /* tall enough to hold polaroids */
+  margin: 160px auto 0 auto; /* ⬅️ pushes entire stack down below h2 */
+}
+
+/* Polaroid frame */
+.polaroid {
+  position: absolute; /* stacked overlapping each other */
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  padding: 10px 10px 40px 10px; /* thick bottom for captions */
+  background: white;
+  box-shadow: 0px 5px 15px 3px rgba(0,0,0,0.2);
+  cursor: pointer;
+
+  /* center inside stack */
+  transform: translate(-50%, -50%) rotate(var(--angle, 0deg));
+  transition: transform 0.5s ease;
+  pointer-events: auto;
+}
+
+/* Polaroid image */
+.polaroid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption{
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
